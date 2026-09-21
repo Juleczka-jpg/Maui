@@ -1,0 +1,12 @@
+<Solution>
+  <Project Path="MauiApp1/MauiApp1.csproj" />
+  <Project Path="MauiApp2/MauiApp2.csproj" Id="faa5f3cb-e53a-435f-b534-57c4e7e0ebfd">
+    <Deploy Solution="Debug|*" />
+  </Project>
+  <Project Path="MauiApp3/MauiApp3.csproj" Id="cdb68f94-ce4c-43b4-989d-5ae30a243b01">
+    <Deploy Solution="Debug|*" />
+  </Project>
+  <Project Path="MauiApp4/MauiApp4.csproj" Id="bd71d77c-46ad-40ec-9b3d-1eb69afc5c46">
+    <Deploy Solution="Debug|*" />
+  </Project>
+</Solution>
