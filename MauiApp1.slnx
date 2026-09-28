@@ -1,5 +1,8 @@
 <Solution>
-  <Project Path="MauiApp1/MauiApp1.csproj" />
+  <Project Path="MauiApp1/MauiApp1.csproj">
+    <Deploy Solution="Debug|*" />
+  </Project>
+  <Project Path="MauiApp10/MauiApp10.csproj" Id="756ba53a-e993-47ad-95d9-ecd5f4e4ad95" />
   <Project Path="MauiApp2/MauiApp2.csproj" Id="faa5f3cb-e53a-435f-b534-57c4e7e0ebfd">
     <Deploy Solution="Debug|*" />
   </Project>
@@ -7,6 +10,19 @@
     <Deploy Solution="Debug|*" />
   </Project>
   <Project Path="MauiApp4/MauiApp4.csproj" Id="bd71d77c-46ad-40ec-9b3d-1eb69afc5c46">
+    <Deploy Solution="Debug|*" />
+  </Project>
+  <Project Path="MauiApp5/MauiApp5.csproj" Id="fbe05776-abfc-4ba2-846d-35413f0b6f30">
+    <Deploy Solution="Debug|*" />
+  </Project>
+  <Project Path="MauiApp6/MauiApp6.csproj" Id="fd90f0ca-e2d1-4586-846c-e0fc4b5e763e">
+    <Deploy Solution="Debug|*" />
+  </Project>
+  <Project Path="MauiApp7/MauiApp7.csproj" Id="9832caa7-e086-4d73-b84f-91720d4f6939" />
+  <Project Path="MauiApp8/MauiApp8.csproj" Id="1f5ba187-e57b-4421-a39e-c9bb30b28c0a">
+    <Deploy Solution="Debug|*" />
+  </Project>
+  <Project Path="MauiApp9/MauiApp9.csproj" Id="1caeb2e8-2285-4576-9018-c82e0dbba064">
     <Deploy Solution="Debug|*" />
   </Project>
 </Solution>

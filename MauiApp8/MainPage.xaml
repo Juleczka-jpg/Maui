@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp8.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+        Padding="30,0"
+        Spacing="25">
+
+            <VerticalStackLayout Spacing="10">
+                
+                <Label Text="Podaj imię i nazwisko: "/>
+                <Entry x:Name="NameEntry"/>
+                
+            </VerticalStackLayout>
+
+
+            <VerticalStackLayout Spacing="10">
+                
+                <Label Text="Podaj nazwisko: "/>
+                <Entry x:Name="LastNameEntry"/>
+                
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Spacing="10">
+
+                <Label Text="Wybierz formę kursu:" />
+
+                <RadioButton Content="Stacjonarny" 
+                         GroupName="formaKursu" 
+                         x:Name="opcjaStacjonarny" />
+
+                <RadioButton Content="Online" 
+                         GroupName="formaKursu" 
+                         x:Name="opcjaOnline"/>
+
+                <RadioButton Content="Hybrydowy" 
+                         GroupName="formaKursu" 
+                         x:Name="opcjaHybrydowy" />
+                
+            </VerticalStackLayout>
+
+            <HorizontalStackLayout Spacing="10">
+
+                <Label Text="Posiadam podstawową wiedzę"  
+                       VerticalOptions="Center" />
+                <CheckBox x:Name="AcceptCheckbox" />
+
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="10">
+
+                <Label Text="Chcę otrzymać certyfikat" 
+                       VerticalOptions="Center" />
+                <Switch x:Name="ToggleCartificate" />
+
+            </HorizontalStackLayout>
+
+
+        <VerticalStackLayout Spacing="10">
+
+            <Label Text="Oczekiwania: "/>
+            <Editor x:Name="ExpectationsEditor"/>
+
+        </VerticalStackLayout>
+
+        <Button x:Name="SignUpBtn"
+                Text="Zapisz się" 
+                Clicked="OnSignUpClicked"
+                HorizontalOptions="Fill" />
+
+            <Label x:Name="etykietaPodsumowanie" 
+               Text="" 
+               FontSize="16"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

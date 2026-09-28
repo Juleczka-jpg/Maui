@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp10.MainPage"
+             Title="NumerZdajacego">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="20">
+
+            <Picker x:Name="RoomPicker"
+                    Title="Wybierz salę:"
+                    SelectedIndexChanged="OnRoomChanged">
+
+                <Picker.Items>
+                    <x:String>Sala A</x:String>
+                    <x:String>Sala B</x:String>
+                    <x:String>Sala C</x:String>
+                </Picker.Items>
+
+            </Picker>
+
+
+            <VerticalStackLayout Spacing="10">
+                
+                <Label  x:Name="QuantityLabel"
+                        Text="Liczba osób: 1"
+                        HorizontalOptions="Center"/>
+                <Stepper x:Name="QuantityStepper"
+                        Minimum="1"
+                        Maximum="50"
+                        Increment="1"
+                        Value="1"
+                        ValueChanged="OnQuantityChanged"/>
+                
+            </VerticalStackLayout>
+
+            <DatePicker x:Name="ReservationDatePicker"
+                        Format="dd.MM.yyyy"
+                        DateSelected="OnDataChanged" />
+
+            <Button x:Name="RegisterBtn"
+                    Text="Zarezerwuj" 
+                    BackgroundColor="LightBlue"
+                    TextColor="Black"
+                    Clicked="OnRegisterClicked" />
+
+            <Label x:Name="ResultLabel"
+                   Text=""
+                   IsVisible="false"/>
+            
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

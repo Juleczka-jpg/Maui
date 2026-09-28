@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp7.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Label Text="Podaj imię: "/>
+            <Entry x:Name="NameEntry"/>
+            
+            <Label Text="Podaj nazwisko: "/>
+            <Entry x:Name="LastNameEntry"/>
+
+            <HorizontalStackLayout Spacing="10">
+                
+                <CheckBox x:Name="AcceptCheckbox" />
+                
+                <Label Text="Posiadam podstawową wiedzę" 
+                       FontSize="18" 
+                       VerticalOptions="Center" />
+                
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="10">
+
+                <Label Text="chcę otrzymać certyfikat" 
+                       VerticalOptions="Center" />
+
+                <Switch x:Name="ToggleCartificate" />
+
+            </HorizontalStackLayout>
+
+            <Button x:Name="CounterBtn"
+                    Text="Zapisz się" 
+                    Clicked="OnSignUpClicked"
+                    HorizontalOptions="Fill" />
+
+            <Label x:Name="etykietaPodsumowanie" 
+                   Text="" 
+                   FontSize="16"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
