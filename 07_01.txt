@@ -1,0 +1,22 @@
+Zadanie 1:
+kolor #CD853F:
+- CD = 205 (składowa czerwona) 
+- 85 = 133 (składowa zielona) 
+- 3F = 63 (składowa niebieska)
+
+Jest to jasnobrązowy kolor, inaczej nazywany “Peru”.
+
+Zadanie 2:
+Metoda Color.FromArgb tworzy obiekt koloru na podstawie napisu z zapisem szesnastkowym. 
+Metoda Color.FromRgb, przyjmuje trzy liczby od 0 do 255 zamiast napisu szesnastkowego. 
+Wybór między FromArgb a FromRgb zależy od źródła danych: gdy mamy napis szesnastkowy z arkusza, używamy FromArgb; gdy mamy liczby z suwaków, wygodniejsza jest FromRgb. Obie zwracają obiekt Color, więc dalej posługujemy się nimi tak samo. 
+
+Zadanie 3:
+Gdy w wielu miejscach używamy tego samego koloru, niewygodne jest powtarzanie jego wartości szesnastkowej w każdej kontrolce. Lepszym rozwiązaniem jest zdefiniowanie koloru raz jako zasobu i odwoływanie się do niego po nazwie. Służy do tego ResourceDictionary.
+
+Odwołujemy się do zasobu przez StaticResource:
+  <Label Text="Tytuł aplikacji" 
+
+    TextColor="{StaticResource KolorAkcentu}" 
+
+    FontSize="24" /> 

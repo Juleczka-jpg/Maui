@@ -1,0 +1,13 @@
+Zadanie 1:
+Entry to pole służące do wpisywania krótkiego tekstu w jednej linii. Idealnie nadaje się do imienia, nazwiska, adresu e–mail czy hasła. To podstawowa kontrolka do pobierania tekstu od użytkownika.  
+
+Editor przypomina Entry, lecz pozwala wpisać tekst w wielu liniach. Stosujemy go, gdy spodziewamy się dłuższej wypowiedzi, na przykład komentarza, opisu lub wiadomości. 
+
+Tak jak Entry, Editor ma właściwości Text oraz Placeholder. Różnica polega na tym, że pole rozszerza się w pionie, mieszcząc kilka wierszy tekstu. 
+
+Zadanie 2:
+Chechbox ma właściwość IsChecked, która przyjmuje wartość logiczną: True oznacza zaznaczone, a False odznaczone.
+Tak jak CheckBox, przełącznik ma właściwość IsToggled. Przyjmuje ona wartość logiczną: True oznacza włączony, a False wyłączony. 
+
+Zadanie 3:
+RadioButtony są zaprojektowane tak, aby w ramach jednej grupy tylko jeden przycisk mógł być zaznaczony w danym momencie. Wspólna nazwa grupy łączy przyciski w logiczną całość, dzięki czemu framework wie, które przyciski mają ze sobą współpracować. Bez wspólnej nazwy grupy, każdy RadioButton działałby jak osobna grupa, co uniemożliwiłoby wzajemne wykluczanie.
