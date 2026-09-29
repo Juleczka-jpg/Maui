@@ -1,0 +1,26 @@
+Zadanie 1:
+Co się dzieje, gdy tekst nie jest liczbą:
+- int.Parse wyrzuca wyjątek (FormatException), który zatrzymuje działanie programu, chyba że obsłużymy go ręcznie (try-catch).
+np. Program crashuje (lub musimy użyć try-catch).
+- int.TryParse nie wyrzuca wyjątku. Zwraca false, a wynik konwersji jest ustawiany na 0. Możemy samodzielnie sprawdzić wynik.
+np. Program kontynuuje działanie, a my wiemy, że konwersja się nie powiodła.
+
+Dlaczego int.TryParse jest lepszy:
+- Parse może zatrzymać program (wyjątek), jeśli tekst jest niepoprawny.
+- TryParse pozwala kontrolować błąd i zareagować (np. wyświetlić komunikat dla użytkownika).
+- Parse wymaga obsługi wyjątków (try-catch), co zaciemnia kod.
+- TryParse jest prostszy i bardziej bezpośredni.
+- Jeśli użytkownik wpisze coś złego (np. "abc" zamiast "123"), program nie crashuje, tylko reaguje na błąd (np. wyświetla komunikat).
+
+Zadanie 2:
+Wygodniejszym i bardziej zauważalnym sposobem jest okno dialogowe. Tworzymy je metodą DisplayAlert, która wyświetla komunikat w osobnym okienku z przyciskiem do zamknięcia. 
+Metoda DisplayAlert w wersji informacyjnej przyjmuje trzy argumenty: tytuł okna, treść komunikatu oraz napis na przycisku zamykającym. Wywołujemy ją na stronie, więc poprzedzamy słowem this lub po prostu samą nazwą metody. 
+
+Czasem chcemy nie tylko poinformować użytkownika, lecz zapytać go o decyzję, na przykład: „Czy na pewno wyczyścić formularz?". Do tego służy wersja DisplayAlert z czterema argumentami, która pokazuje dwa przyciski i zwraca odpowiedź użytkownika. 
+W tej wersji argumenty to: tytuł, treść pytania, napis na przycisku potwierdzenia oraz napis na przycisku odmowy. Metoda zwraca wartość logiczną: true, gdy użytkownik wybrał potwierdzenie, oraz false, gdy wybrał odmowę. 
+
+Zadanie 3:
+Słowo async dodajemy między modyfikatorem dostępu a typem zwracanym. Bez niego kompilator nie pozwoli użyć await i zgłosi błąd. To częsta drobna pomyłka, więc warto zapamiętać tę parę: gdzie await, tam wcześniej async.
+
+Zadanie 4:
+Każdy nieudany etap walidacji kończymy oknem dialogowym z komunikatem oraz słowem return, które natychmiast przerywa metodę. Dzięki temu obliczenie wykonuje się tylko wtedy, gdy wszystkie dane są poprawne. 
