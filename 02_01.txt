@@ -1,0 +1,9 @@
+Zadanie 1:
+XAML to skrót od eXtensible Application Markup Language, co po polsku znaczy rozszerzalny język znaczników aplikacji. Słowo „znaczniki" wskazuje, że XAML opiera się na znacznikach. XAML służy wyłącznie do opisu interfejsu graficznego. Nie zawiera pętli, warunków ani obliczeń — od tego mamy język C#. Można powiedzieć, że XAML opisuje, jak aplikacja wygląda, a C# opisuje, co aplikacja robi.
+
+Zadanie 2:
+Często chcemy zmienić jakąś kontrolkę z poziomu kodu C#, na przykład zmienić tekst etykiety po kliknięciu przycisku. Aby to zrobić, kontrolka musi mieć nazwę. Nadajemy ją atrybutem x:Name. 
+Atrybut x:Name działa jak imię nadane elementowi. Po nadaniu nazwy możemy się do elementu odwołać w kodzie tak samo, jak do zwykłej zmiennej. 
+
+Zadanie 3:
+Metoda InitializeComponent jest kluczowa. To ona wczytuje opis wyglądu z pliku XAML i tworzy wszystkie zadeklarowane kontrolki. Bez jej wywołania strona byłaby pusta. Dlatego zawsze znajduje się w konstruktorze strony. 

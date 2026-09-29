@@ -1,0 +1,15 @@
+Zadanie 1:
+- "Padding" to odstęp wewnętrzny, czyli przestrzeń między brzegiem układu a jego zawartością. Działa jak margines wewnątrz pudełka, który nie pozwala, aby zawartość przylegała do ścianek. 
+
+- "Spacing" to odstęp między kolejnymi elementami w układzie. Im większa wartość, tym więcej miejsca między sąsiednimi kontrolkami. 
+
+- "Margin" to odstęp zewnętrzny, czyli przestrzeń wokół pojedynczego elementu, oddzielająca go od sąsiadów. W odróżnieniu od Padding i Spacing, Margin ustawiamy na konkretnym elemencie, a nie na układzie.
+
+Zadanie 2:
+Auto — komórka dopasowuje rozmiar do zawartości. 
+
+* — komórka zajmuje całą pozostałą wolną przestrzeń. 
+
+Zadanie 3:
+Czasem chcemy, aby jeden element zajął więcej niż jedną komórkę. Służy do tego rozpinanie. Atrybut Grid.ColumnSpan rozpina element na kilka kolumn.
+Rozpinanie przydaje się, gdy przycisk lub nagłówek ma być szeroki na całą siatkę. Bez rozpięcia zająłby tylko jedną kolumnę, co wyglądałoby niesymetrycznie. Z rozpięciem element ładnie wypełnia całą szerokość. 

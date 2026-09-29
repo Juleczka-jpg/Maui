@@ -1,0 +1,24 @@
+Zadanie 1:
+Programowanie sterowane zdarzeniami to tak, jakbymy mieli pracownika, który cały czas czeka, aż coś się stanie, a potem reaguje tylko na to, co Cię interesuje. My jesteśmy szefem - decydujemy, co zrobić, a program (pracownik) wykonuje tylko to, co mu każesz, w momencie, gdy Ty tego chcemy.
+
+Zadanie 2:
+Sygnatura składa się z dwóch parametrów. Pierwszy nosi zwykle nazwę sender i jest obiektem typu object — to kontrolka, która zdarzenie wywołała. Drugi nazywa się zwykle e i jest typu EventArgs — zawiera dodatkowe dane o zdarzeniu. Metoda nie zwraca żadnej wartości, więc jej typem zwracanym jest void. 
+
+Poprawna sygnatura metody: 
+private void PrzyciskClicked(object sender, EventArgs e) 
+
+Wyjaśnienie parametrów:
+Parametr sender to przycisk, który został kliknięty. 
+Parametr e zawiera dodatkowe informacje o zdarzeniu kliknięcia. 
+
+Zadanie 3:
+Choć poznaliśmy cztery różne zdarzenia, łączy je wspólny wzorzec. Każda metoda obsługi przyjmuje sender oraz e, a różni się jedynie konkretnym typem parametru e, który niesie dane charakterystyczne dla danego zdarzenia. 
+
+Poniższe zestawienie pomaga zapamiętać, czego można się spodziewać w każdym przypadku:
+- Clicked (przycisk): parametr e typu EventArgs, bez dodatkowych danych. 
+- ValueChanged (suwak): parametr e typu ValueChangedEventArgs, udostępnia e.NewValue oraz e.OldValue. 
+- TextChanged (pole tekstowe): parametr e typu TextChangedEventArgs, udostępnia e.NewTextValue oraz e.OldTextValue. 
+- CheckedChanged (pole wyboru): parametr e typu CheckedChangedEventArgs, udostępnia e.Value. 
+
+Zadanie 4:
+Podpinamy metodę PrzyciskClicked pod zdarzenie Clicked przycisku. Po nazwie metody nie ma nawiasów, ponieważ nie wywołujemy jej teraz, lecz wskazujemy ją do późniejszego użycia. 

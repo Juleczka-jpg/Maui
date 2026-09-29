@@ -1,0 +1,18 @@
+Zadanie 1:
+Aplikacje z interfejsem graficznym: Użytkownik wchodzi w interakcję z aplikacją za pomocą elementów wizualnych, takimi jak okna, przyciski, menu, ikony czy pola tekstowe. Interfejs jest intuicyjny i oparty na myszy.
+Aplikacje konsolowe: Użytkownik wchodzi w interakcję z aplikacją poprzez wprowadzanie tekstowych komend w wierszu poleceń. Interakcja odbywa się wyłącznie za pomocą klawiatury, a wyniki są wyświetlane jako tekst.
+
+Aplikacje z interfejsem graficznym: Zazwyczaj wymagają większej mocy obliczeniowej i pamięci, ponieważ muszą renderować grafikę, zarządzać oknami i obsługiwać zdarzenia interfejsu użytkownika. Są bardziej zasobożerne.
+Aplikacje konsolowe: Są lekkie i wydajne, ponieważ nie wymagają grafiki ani złożonych mechanizmów interfejsu. Mogą działać nawet na słabszych maszynach lub zdalnie.
+
+Zadanie 2:
+Plik App.xaml reprezentuje całą aplikację jako jeden obiekt. Tutaj przechowujemy ustawienia wspólne dla wszystkich stron, na przykład kolory czy style. Towarzyszy mu plik App.xaml.cs, który zawiera kod C# związany z aplikacją. 
+
+Najważniejsza dla nas para plików to MainPage.xaml oraz MainPage.xaml.cs. To strona, którą zobaczy użytkownik po uruchomieniu aplikacji. Plik z rozszerzeniem .xaml opisuje wygląd strony, a plik z rozszerzeniem .xaml.cs zawiera kod reagujący na działania użytkownika. 
+Drugi plik nazywamy plikiem kodu towarzyszącego. To w nim umieszczamy logikę napisaną w C#. Taki podział będzie nam towarzyszył przez cały moduł, dlatego warto go dobrze zapamiętać. 
+
+Zadanie 3:
+1. .NET MAUI to framework do tworzenia aplikacji wieloplatformowych (Windows, macOS, Android, iOS), który wymaga dodatkowych narzędzi i SDK specyficznych dla każdej platformy.
+2. Obciążenie zawiera niezbędne komponenty(SDK dla platform mobilnych, Narzędzia kompilacji, Szablony projektów MAUI, Debuggery i emulatorzy).
+3. Visual Studio jest ogólnym środowiskiem programistycznym i nie instaluje domyślnie narzędzi specyficznych dla konkretnych frameworków. Obciążenie jest modułowe — instalujesz tylko to, czego potrzebujesz.
+4. Obciążenia są łatwe do aktualizacji niezależnie od Visual Studio. 

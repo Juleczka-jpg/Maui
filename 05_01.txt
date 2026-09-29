@@ -1,0 +1,21 @@
+Zadanie 1:
+Slider, czyli suwak, pozwala wybrać liczbę przez przesuwanie uchwytu wzdłuż linii. Stosujemy go, gdy użytkownik ma ustawić wartość z pewnego zakresu.
+Suwak ma trzy podstawowe właściwości. Minimum to najmniejsza możliwa wartość, Maximum to największa, a Value to wartość aktualnie wybrana. Przesuwając uchwyt, użytkownik zmienia właściwość Value.
+
+Stepper to kontrolka z dwoma przyciskami, plus i minus, służąca do zmiany liczby małymi krokami. Sprawdza się tam, gdzie potrzebujemy precyzyjnej wartości całkowitej. 
+Stepper ma podobne właściwości do suwaka: Minimum, Maximum oraz Value. Dodatkowo ma właściwość Increment, czyli wielkość pojedynczego kroku. Każde naciśnięcie przycisku zmienia wartość o ten krok. 
+
+Różnica między suwakiem a stepperem polega na sposobie wyboru. Suwak nadaje się do płynnej zmiany w dużym zakresie, a stepper do precyzyjnej zmiany o jeden lub o ustaloną wartość. Wybór zależy od tego, jakiej dokładności potrzebujemy. 
+
+Slidera użyjemy, gdy chcemy regulować głośność, jasność ekranu, prędkość odtwarzania, poziom przybliżenia.
+Steppera użyjemy, gdy chcemy wybrać liczbę biletów, ilość osób, ilość produktów, wiek użytkownika.
+
+Zadanie 2:
+Wartość suwaka jest typu double, czyli liczby z częścią ułamkową. Często chcemy ją zaokrąglić do liczby całkowitej, ponieważ w wielu przypadkach użytkownikowi wystarczy wybór wartości całkowitej(liczba przedmiotów 5,3 -> 5, wiek, liczba osób).
+
+Zadanie 3:
+Właściwości odpowiedzialne za wygląd kontrolki:
+- TextColor -  ustawia kolor tekstu kontrolki. Kolor możemy podać nazwą angielską lub kodem szesnastkowym. Kod szesnastkowy zaczyna się od znaku #, po którym następuje sześć znaków określających ilość czerwieni, zieleni i niebieskiego. 
+- BackgroundColor - ustawia kolor tła kontrolki. Działa podobnie do TextColor, lecz dotyczy obszaru za tekstem. Często stosujemy go do wyróżnienia przycisków lub paneli.
+- FontSize - ustawia rozmiar liter w jednostkach. Im większa liczba, tym większy tekst. Tytuły zwykle mają większy rozmiar niż zwykły tekst. 
+- FontAttributes - określa styl czcionki. Może przyjąć wartość Bold (pogrubienie), Italic (pochylenie) lub None (brak). Pogrubienie często stosujemy do nagłówków, aby je wyróżnić. 
