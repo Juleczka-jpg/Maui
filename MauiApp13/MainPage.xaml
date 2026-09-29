@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp13.MainPage"
+             Title="NumerZdajacego">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Button x:Name="CornsilkBtn"
+                    Text="Cornsilk"                
+                    Clicked="OnCornsilkClicked" />
+
+            <Button x:Name="PeruBtn"
+                    Text="Peru"                
+                    Clicked="OnPeruClicked" />
+            
+            <Label x:Name="ColorLabel"
+                   Text="Aktualny kolor: brak"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
