@@ -2,23 +2,32 @@
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
-
         public MainPage()
         {
             InitializeComponent();
         }
 
-        private void OnCounterClicked(object? sender, EventArgs e)
+        private void OnSubmitClicked(object? sender, EventArgs e)
         {
-            count++;
+            string tekst = AgeEntry.Text;
+            bool sukces = int.TryParse(tekst, out int wiek);
 
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
+            if (sukces == true)
+            {
+                if (wiek < 1 || wiek > 120)
+                {
+                    DisplayAlert("Wiek", $"Wiek musi być z zakresu 1–120", "OK");
+
+                }
+                else
+                {
+                    ResultLabel.Text = $"Twój wiek to: {wiek}";
+                }
+            }
             else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
+            {
+                DisplayAlert("Błąd", "Proszę wprowadzić poprawny wiek.", "OK");
+            }
         }
     }
 }
