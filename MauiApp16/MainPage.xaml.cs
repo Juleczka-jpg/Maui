@@ -2,23 +2,50 @@
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
-
         public MainPage()
         {
             InitializeComponent();
         }
 
-        private void OnCounterClicked(object? sender, EventArgs e)
+        private async void OnCalculateClicked(object? sender, EventArgs e)
         {
-            count++;
+            if (!double.TryParse(HeighthEntry.Text, out double height))
+            {
+                await DisplayAlert("Błąd", "Wysokość musi być liczbą", "OK");
+                return;
+            }
 
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
+            if (!double.TryParse(WidthEntry.Text, out double width))
+            {
+                await DisplayAlert("Błąd", "Szerokość musi być liczbą", "OK");
+                return; 
+            }
+
+            if (height <= 0 || width <= 0)
+            {
+                await DisplayAlert("Błąd", "Wymiary muszą być liczbami dodatnimi", "OK");
+                return;
+            }
+
+            double area = height * width;
+            AreaLabel.Text = $"Pole powierzchni: {area}";
+
+        }
+
+        private async void OnDeleteClicked(object? sender, EventArgs e)
+        {
+            bool potwierdzenie = await DisplayAlertAsync("Wynik", "Czy na pewno chcesz usunąć dane?", "Tak", "Nie");
+
+            if(potwierdzenie)
+            {
+                HeighthEntry.Text = string.Empty;
+                WidthEntry.Text = string.Empty;
+                AreaLabel.Text = string.Empty;
+            }
             else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
+            {
+                return;
+            }
         }
     }
 }
