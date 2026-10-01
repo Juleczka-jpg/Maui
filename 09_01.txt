@@ -1,0 +1,22 @@
+Zadanie 1:
+Właściwość ItemsSource wskazuje kolekcję danych, które lista ma wyświetlić. Może to być zwykła lista, tablica albo specjalna kolekcja. Każdy element kolekcji stanie się jednym wierszem listy. 
+Przypisania źródła dokonujemy zwykle w kodzie towarzyszącym, po utworzeniu danych. Lista od razu pokazuje wszystkie elementy źródła. 
+
+Wygląd pojedynczego wiersza definiujemy przez właściwość ItemTemplate. W jej wnętrzu umieszczamy element DataTemplate, który opisuje, jak ma wyglądać jedna pozycja listy. 
+Szablon to wzorzec powtarzany dla każdego elementu kolekcji. Definiujemy go raz, a kontrolka stosuje go automatycznie do wszystkich elementów. Wewnątrz szablonu możemy umieścić dowolny układ kontrolek: etykiety, przyciski, obrazy. 
+
+Zadanie 2:
+Zwykła lista List świetnie nadaje się do wyświetlenia danych ustalonych z góry. Pojawia się jednak problem, gdy chcemy dodawać lub usuwać elementy w trakcie działania aplikacji. 
+Gdy do zwykłej listy List dodamy nowy element już po przypisaniu jej jako ItemsSource, kontrolka tego nie zauważy. Ekran pokaże starą zawartość, mimo że dane się zmieniły. Dzieje się tak, ponieważ zwykła lista nie ma żadnego sposobu, by powiadomić kontrolkę o zmianie.
+
+Rozwiązaniem problemu jest ObservableCollection. Wygląda i działa niemal jak zwykła lista, ale ma jedną dodatkową, kluczową cechę: za każdym razem, gdy dodamy lub usuniemy element, automatycznie powiadamia o tym kontrolkę, która natychmiast odświeża widok. 
+Aby z niej skorzystać, na początku pliku dodajemy odpowiednią przestrzeń nazw, a samą kolekcję deklarujemy jako pole klasy, by była dostępna we wszystkich metodach. 
+
+Zadanie 3:
+Sprawdzenie if (WidokListy.SelectedItem == null) chroni nas przed sytuacją, gdy użytkownik kliknie przycisk usuwania, niczego nie zaznaczywszy. Wartość null oznacza brak zaznaczenia, więc w takim wypadku po prostu kończymy metodę. Bez tej kontroli próba usunięcia „niczego" mogłaby spowodować błąd. 
+
+Zadanie 4:
+ObservableCollection:
+Właściwość zwracająca liczbę elementów - liczba.Count
+Dodawanie - zadania.Add(nowe); 
+Usuwanie -  zadania.Remove(zaznaczone); 
