@@ -1,5 +1,4 @@
 <Solution>
-  <Project Path="09_02/09_02.csproj" Id="86e8e934-57ae-49a4-a305-b3900ec7655c" />
   <Project Path="MauiApp1/01_02.csproj">
     <Deploy Solution="Debug|*" />
   </Project>
@@ -21,7 +20,9 @@
   <Project Path="MauiApp15/08_02.csproj" Id="3983c8a6-f214-43e4-9b9e-16d234441366">
     <Deploy Solution="Debug|*" />
   </Project>
-  <Project Path="MauiApp16/08_03.csproj" Id="872bf412-a57c-4841-b8ee-d2f9ef7855fc" />
+  <Project Path="MauiApp16/08_03.csproj" Id="872bf412-a57c-4841-b8ee-d2f9ef7855fc">
+    <Deploy Solution="Debug|*" />
+  </Project>
   <Project Path="MauiApp2/01_03.csproj" Id="faa5f3cb-e53a-435f-b534-57c4e7e0ebfd">
     <Deploy Solution="Debug|*" />
   </Project>
