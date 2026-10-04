@@ -1,4 +1,4 @@
-﻿namespace MauiApp9
+﻿namespace _05_02
 {
     public partial class MainPage : ContentPage
     {

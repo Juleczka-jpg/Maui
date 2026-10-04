@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace MauiApp3
+namespace _02_02
 {
     public class Program
     {

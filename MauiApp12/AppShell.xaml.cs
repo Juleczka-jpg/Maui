@@ -1,4 +1,4 @@
-﻿namespace MauiApp12
+﻿namespace _06_03
 {
     public partial class AppShell : Shell
     {

@@ -3,7 +3,7 @@
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
 
-namespace MauiApp13.WinUI
+namespace _07_02.WinUI
 {
     /// <summary>
     /// Provides application-specific behavior to supplement the default Application class.

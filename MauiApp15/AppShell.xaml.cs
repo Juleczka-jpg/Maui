@@ -1,4 +1,4 @@
-﻿namespace MauiApp15
+﻿namespace _08_02
 {
     public partial class AppShell : Shell
     {

@@ -1,4 +1,4 @@
-﻿namespace MauiApp3
+﻿namespace _02_02
 {
     public partial class MainPage : ContentPage
     {

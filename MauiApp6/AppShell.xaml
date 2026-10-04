@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Shell
-    x:Class="MauiApp6.AppShell"
+    x:Class="_03_03.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:MauiApp6"
-    Title="MauiApp6">
+    xmlns:local="clr-namespace:_03_03"
+    Title="_03_03">
 
     <ShellContent
         Title="Home"

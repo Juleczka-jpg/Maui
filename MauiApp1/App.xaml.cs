@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 
-namespace MauiApp1
+namespace _01_02
 {
     public partial class App : Application
     {

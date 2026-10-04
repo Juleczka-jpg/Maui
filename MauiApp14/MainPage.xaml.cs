@@ -1,7 +1,7 @@
 ﻿using Microsoft.Maui.Graphics.Text;
 using Microsoft.Maui.Graphics;
 
-namespace MauiApp14
+namespace _07_03
 {
     public partial class MainPage : ContentPage
     {
