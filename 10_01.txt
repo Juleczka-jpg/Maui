@@ -1,0 +1,17 @@
+Zadanie 1:
+Wiązanie danych to automatyczne połączenie między właściwością kontrolki a źródłem danych. Gdy źródło się zmienia, kontrolka aktualizuje się sama; w niektórych trybach działa to także w drugą stronę. 
+Dotychczas, by pokazać wartość suwaka na etykiecie, pisaliśmy metodę obsługi zdarzenia ValueChanged i ręcznie przypisywaliśmy tekst etykiety. Wiązanie danych pozwala osiągnąć ten sam efekt bez metody obsługi: wystarczy raz połączyć etykietę z suwakiem w pliku XAML, a reszta zadzieje się sama. 
+
+Zadanie 2:
+Wiązanie może działać w jedną stronę albo w obie. Tryb określa kierunek przepływu danych między źródłem a kontrolką. Dwa najważniejsze tryby to OneWay oraz TwoWay. 
+Tryb OneWay przekazuje dane tylko od źródła do kontrolki. Gdy zmieni się źródło, kontrolka się zaktualizuje, ale nie odwrotnie. Tryb TwoWay działa w obie strony: zmiana źródła aktualizuje kontrolkę, a zmiana w kontrolce aktualizuje źródło. 
+Wybór trybu zależy od tego, co chcemy osiągnąć. Dla etykiety, która tylko wyświetla wartość, wystarczy OneWay, ponieważ etykieta nie zmienia danych. Dla pola Entry, w którym użytkownik wpisuje wartość mającą trafić z powrotem do źródła, potrzebny jest TwoWay. Warto zapamiętać tę zasadę: tam, gdzie dane mają wracać do źródła, używamy trybu dwukierunkowego. 
+
+Zadanie 3:
+Wiązanie nie musi sięgać do obiektu danych — może łączyć dwie kontrolki bezpośrednio. Wtedy źródłem jest inna kontrolka, którą wskazujemy przez Source w połączeniu z x:Reference. To bardzo wygodny sposób, by jedna kontrolka pokazywała stan drugiej. 
+x:Reference wskazuje kontrolkę po jej nazwie nadanej przez x:Name. Zapis Source={x:Reference NazwaKontrolki} oznacza „weź dane z tej konkretnej kontrolki", a po nim podajemy właściwość, której wartość chcemy odczytać, przez Path. 
+
+Zadanie 4:
+a) binding
+b) event
+c) binding
