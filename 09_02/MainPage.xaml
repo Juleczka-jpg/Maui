@@ -25,6 +25,9 @@
                 </CollectionView.ItemTemplate>
             </CollectionView>
 
+            <Button Text="Usuń zaznaczone" 
+                    Clicked="OnDeleteClicked" />
+
         </VerticalStackLayout>
     </ScrollView>
 

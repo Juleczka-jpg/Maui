@@ -9,7 +9,7 @@ namespace _09_02
         public MainPage()
         {
             InitializeComponent();
-
+            WidokListy.ItemsSource = listaZakupow;
         }
 
         private void OnAddClicked(object? sender, EventArgs e)
@@ -24,5 +24,17 @@ namespace _09_02
             listaZakupow.Add(nowe);
             ShoppingEntry.Text = "";
         }
+
+        private void OnDeleteClicked(object sender, EventArgs e) 
+        { 
+            if (WidokListy.SelectedItem == null)
+            {
+                return;
+            }
+
+            string zaznaczone = (string)WidokListy.SelectedItem;
+            listaZakupow.Remove(zaznaczone);
+        }
     }
 }
+
